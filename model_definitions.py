@@ -4,11 +4,6 @@ import torch.nn.functional as F
 from torch_geometric.nn import GCNConv, global_max_pool
 import torchvision.models as models
 
-
-
-
-# ✅ Define Model Architectures
-
 class CNNBranch(nn.Module):
     def __init__(self):
         super().__init__()
@@ -77,4 +72,5 @@ class FuNetC(nn.Module):
         self.fc = nn.Linear(1200, 2)
 
     def forward(self, img, graph):
+
         return self.fc(torch.cat([self.cnn(img), self.gnn(graph)], dim=1))
