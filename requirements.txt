@@ -1,6 +1,10 @@
-streamlit
-opencv-python-headless
-numpy
-moviepy
-pandas
-altair
+--extra-index-url https://download.pytorch.org/whl/cpu
+streamlit==1.67.0
+torch==2.8.0
+timm==1.0.31
+safetensors==0.8.0
+opencv-python-headless==5.0.0.93
+numpy==2.5.5
+pandas==3.1.1
+plotly==7.1.0
+pillow==13.0.0

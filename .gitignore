@@ -1,5 +1,8 @@
-.DS_Store
 __pycache__/
+.DS_Store
+.venv/
 *.pyc
-temp_video*
 *.zip
+temp_video*
+weights/*.part
+weights/*.safetensors
