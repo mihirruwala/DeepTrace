@@ -730,7 +730,7 @@ with tab_a:
             if res["evidence"]:
                 H(f"""
 <div class="dt-card"><div class="dt-lbl"><span>{'Key frame' if is_video else 'Faces found'}</span><span>box colour follows the verdict bands</span></div>
-<img src="data:image/jpeg;base64,{res['evidence']}" alt="{esc(res['evidence_label'])}" style="width:100%;border-radius:12px;display:block">
+<img src="data:image/jpeg;base64,{res['evidence']}" alt="{esc(res['evidence_label'])}" style="width:100%;max-height:540px;object-fit:contain;background:#0d0f0e;border-radius:12px;display:block">
 <div class="dt-ev-cap">{esc(res['evidence_label'])}</div></div>
 """)
         with e2:
